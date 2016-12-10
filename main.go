@@ -2,14 +2,17 @@ package main
 
 import (
 	log "github.com/Sirupsen/logrus"
-	"regexp"
 )
 
 const (
+	MAX_SPECIALCOVERAGE_SIZE = 6
 	MAX_NEWS_SIZE = 1024
 	MAX_SUBJECT_SIZE = 256
 	SIGNAL = "_KIRAI_YOUSHOULDEXIT_KIRAI_"
 	KIRAI_DEBUG = 2
+	RESULT_PATH = "./result/"
+	CATALOG_PATH = "./catalog/"
+	SUBJECT_PATH_CAT_FILENAME = "subject.usns"
 )
 
 var rootUrls = [...]string {
@@ -30,15 +33,19 @@ var specialCoverage = [...]string {
 	"culture",
 }
 
-//var urlChannel = make(chan string, 200)
+func Init() {
+	CreateDir(RESULT_PATH)
+	CreateDir(CATALOG_PATH)
+	UpdateSubjectUrl()
+}
 
 func main() {
-	CreateDir("./result/")
-	for i := range rootUrls {
-		CreateDir("./result/"+specialCoverage[i])
-		//GetNewsUrls(rootUrls[i], specialCoverage[i], "./result/"+specialCoverage[i]+"/")
-		GetSubject(rootUrls[i], specialCoverage[i])
-		log.Infoln("\n\n\n")
+	log.Infoln("Start.")
+	Init()
+	urls := GetSubjectUrl()
+	for i := 0; i < 1; i++ {
+		for j := 0; j < len(urls[i]); j++ {
+			GetNewsUrls(urls[i][j], specialCoverage[i], "./result/")
+		}
 	}
-	//SaveFile("./","test", GetHtml("http://english.sina.com/specialcoverage/ent.html"))
 }

@@ -14,6 +14,7 @@ type New struct {
 	Title string
 	Time string
 	Content string
+	Subject string
 }
 
 type Subject struct {
