@@ -1,0 +1,573 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- [ published at 2016-12-10 12:33:16 ] -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>World - Special Coverage - SINA English</title>
+<meta name="keywords" content="SINA English, special coverage, special report, full coverage">
+<meta name="description" content="Find special news coverage on breaking news and current affairs through SINA English.">
+
+<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+<script src="http://english.sina.com/js/common/2012/sinalib.js"></script>
+<script type="text/javascript" src="http://english.sina.com/common/2012/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://english.sina.com/js/2012index/common.js"></script>
+
+<style type="text/css">
+/* 初始化CSS */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend,img{margin:0;padding:0;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul,ol{list-style:none;}
+input {padding-top:0; padding-bottom:0;}
+input::-moz-focus-inner{ border:none; padding:0;}
+select,input{vertical-align:middle;}
+select,input,textarea{font-size:12px;margin:0;}
+input[type="text"], input[type="password"], textarea {outline-style:none; -webkit-appearance:none; }
+textarea {resize:none; }
+table{border-collapse:collapse;}
+body{background:#fff;color:#333;padding:0px 0;font:12px/20px "Arial";-webkit-text-size-adjust:none;}
+
+a{color:#393939;text-decoration:none;}
+a:visited{color:#393939;}
+a:hover, a:active, a:focus{color:#727272;text-decoration:underline;}
+
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+.clearit{clear:both;height:0;font-size:0;overflow:hidden;}
+.wrap{width: 950px;margin: 0 auto;}
+.icon_mid_weather {height: 78px;margin: auto;width: 78px;}
+.noBorder{border:none!important;}
+.dotLine01{background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_repeatImages.png) 0 -112px repeat-x;height: 1px;font-size: 0;line-height: 0;}
+ .play_icon {position:absolute; width:22px; height:22px; bottom:25px; left:5px; cursor:pointer; background:url(http://www.sinaimg.cn/ent/deco/2012/0517/ent_zxh_0420_video_play_icon.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src='http://i0.sinaimg.cn/ent/deco/2012/0517/ent_zxh_0420_video_play_icon.png');_background:none;}
+a:hover .play_icon {background:url(http://www.sinaimg.cn/ent/deco/2012/0517/ent_zxh_0420_video_play_icon_h.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src='http://www.sinaimg.cn/ent/deco/2012/0517/ent_zxh_0420_video_play_icon_h.png');_background:none;}
+.fs18{font-size: 18px!important;}
+.fs16{font-size: 16px!important;}
+/*banner*/
+ .bannerBack{background: #f7f7f7;}
+ .banner{background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_banner.gif) no-repeat;height: 78px;width: 950px;margin: 0 auto;overflow: hidden;}
+ .bannerLogo{float: left;padding-top: 13px;width: 172px;}
+ .bannerSearch{float: left;width: 600px;padding-top: 27px;}
+ .bannerSearch .w_div{float: right;}
+ .bannerSearch .input_01{float: left;border:1px solid #c4c7c7;width: 137px; height: 23px;border-right-width: 0px;}
+ .bannerSearch .w_div span	{float: left;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) 0 0 no-repeat;width: 60px; height: 25px;line-height: 25px;overflow: hidden;text-align: center;color: #919191;font-size: 14px;cursor: default;}
+ .bannerSearch .submit_01{border:none;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) -80px 0 no-repeat;width: 54px; height: 25px;float: left;}
+ .bannerInfo{float: left;margin-left:10px;padding-top:5px;}
+ .bannerInfo span{display:block;text-align:center;}
+ .bannerInfo .currentInfo{font-size:14px;color:#919191;line-height:20px;}
+.bannerInfo .currentTime{font-size:18px;color:#5c5c5c;line-height:33px;}
+.bannerInfo .currentDate{font-size:12px;color:#919191;line-height:20px;}
+
+.bannerWeather{float: left;text-align:center;margin-left:10px;}/*edit by zyc 0912*/
+.bannerWeather span{margin-top:-20px;position:absolute;display:block;color:#919191;width: 76px;text-align: center;}
+ /*simSelect*/
+.simSelect{height:22px;line-height:20px;vertical-align:top;margin:0 0 0 6px;float:left;font-size:12px;}
+.simSelect option{line-height:20px;height:20px;}
+.selectView{position:absolute;text-align:left;cursor:default;}
+.selectView .ds_cont{border:1px solid #cacccd;background:#fff;height:18px;_line-height:18px;overflow:hidden;}
+.selectView .ds_title{float:left;padding-left:3px;}
+.selectView .ds_button{float:right;width:19px;height:18px;background:url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) no-repeat -480px -425px;}
+.selectView .ds_list{position:absolute;top:19px;left:0;background:#fff;width:100%;}
+.selectView .dsl_cont{border:1px solid #cacccd;_zoom:1;}
+.selectView .ds_list p{line-height:20px;margin:1px;color:#000;padding-left:5px;background:#fff;_zoom:1;}
+.selectView .ds_list p.selected{background:#335ea8;color:#fff;}
+.h255 .ds_list{height: 255px;overflow-y:auto }
+
+/*nav*/
+.navBack{background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_repeatImages.png) 0 0 repeat-x;}
+.nav{height: 43px;padding-top: 3px;width: 970px;margin: 0 auto;position: relative;z-index: 3;}
+.nav .item{float: left;position: relative;}
+.nav .itemA{display: inline-block;;background:#153460 ;height: 40px;padding-left: 15px;border-left: 1px solid #0d1e37;border-right: 1px solid #2c4769;}
+.nav .itemA span{display: inline-block;height: 40px;padding-right: 15px;line-height: 40px;color: #fff;font-size: 14px;}
+.nav .itemA:hover{display: inline-block;background:#d8d8d8 url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) -300px -240px no-repeat;height: 43px;padding-left: 16px;border: none;text-decoration: none;}
+.nav .itemA:hover span{display: inline-block;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) 100% -240px no-repeat;height: 43px;padding-right: 16px;line-height: 43px;color: #1a3356;}
+
+.nav .navList{}
+.nav .navList{display: inline-block;;background:#153460 ;height: 40px;padding-left: 15px;border-left: 1px solid #0d1e37;border-right: 1px solid #2c4769;cursor: pointer;}
+.nav .item .navList span{display: inline-block;height: 40px;padding-right: 15px;line-height: 40px;color: #fff;font-size: 14px;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) 100% -368px no-repeat;}
+.nav .hover .navList{display: inline-block;height: 40px;padding-left: 16px;border: none;text-decoration: none;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) -299px -304px no-repeat;}
+.nav .hover .navList span{display: inline-block;height: 40px;padding-right: 16px;line-height: 43px;color: #1a3356;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) 100% -304px no-repeat;}
+.nav  .currentItem .itemA{display: inline-block;background:#d8d8d8 url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) -300px -240px no-repeat;height: 43px;padding-left: 16px;border: none;text-decoration: none;}
+.nav  .currentItem .itemA span{display: inline-block;background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_images.png) 100% -240px no-repeat;height: 43px;padding-right: 16px;line-height: 43px;color: #1a3356;}
+.item .listDiv{position: absolute;top:40px;left: 0;border:1px solid #6e6e6e;background: #fff;border-top-width:0px; padding: 5px 1px 12px 1px;display: none;}
+.hover .listDiv{display: block;}
+
+.listDiv td{vertical-align: top;border-right: 1px solid #ccd8e5;}
+.listDiv dl{text-align:right;}
+.listDiv dt{border: 1px solid #ccd8e5;border-width: 0 0px 1px 0;  height: 36px; line-height: 36px;padding-left: 20px;padding-right: 10px;}
+.listDiv dd{height: 25px;padding-right: 10px;}
+.shadowDiv{background: #000;top:42px;left: 1px;position: absolute;display: none;filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0,startColorstr = '#80000000', endColorstr = '#80000000' );background-color:rgba( 0, 0, 0, .5 );width: 662px;height: 180px;}
+.hover .shadowDiv{display: block;}
+.listDiv dt a:link{color: #003b7e;font-size: 12px;font-weight: bold;}
+.listDiv dt a:visited{color: #003b7e;}
+.listDiv dt a:hover{color: #8D0000;}
+.listDiv dd a:link{color: #393939;font-size: 12px;}
+.listDiv dd a:visited{color: #393939;}
+.listDiv dd a:hover{color: #8D0000;}
+
+.subNav{width: 950px;margin: 0 auto;height: 31px;border-bottom: 5px solid #f2f2f2;line-height: 31px;}
+.subNav .keyWords{float: left;}
+.subNav .keyWords a{padding: 0 2px;}
+.subNav .keyWords a:link{color: #3f3f3f;padding: 0 5px;}
+.subNav .keyWords a:visited{color: #3f3f3f;}
+.subNav .keyWords a:hover{color: #8D0000;}
+.subNav .tag{color: #003b7e;font-weight: bold;float: left;padding-right: 5px;}
+.subNav .tag a:link{color: #003b7e;font-weight: bold;}
+.subNav .tag a:visited{color: #003b7e;}
+.subNav .tag a:hover{color: #8D0000;}
+.subNav .tag_cont{width: 487px;float: left;}
+.subNav .tag_cont a:link{color: #3f3f3f;padding: 0 5px;}
+.subNav .tag_cont a:visited{color: #3f3f3f;}
+.subNav .tag_cont a:hover{color: #8D0000;}
+
+#footer {color: #646565;min-height: 110px;font-family: 'Arial';border-top: 8px solid #ebebeb;}/*edit by zyc 0912*/
+#footer .FW970 {margin: 0 auto;padding: 10px 0;text-align: center;width: 750px;}
+#footer p {padding: 5px;}
+#footer a {font-weight: bold;}
+#footer a:link, #footer a:visited {color: #000000;text-decoration: none;}
+#footer a:hover {text-decoration: underline;}
+
+.subNav .tag_cont span{padding: 0 5px;}
+.thirdLevel{height: 41px;overflow: hidden;}
+.thirdLevel .tag{color: #393939;font-weight: normal;padding-right: 10px;padding-top: 10px;line-height: 30px;}
+.thirdLevel .tag a:link{color: #393939;font-weight: normal;font-size: 30px;}
+.thirdLevel .tag a:visited{color: #393939;font-size: 30px;}
+.thirdLevel .tag a:hover{color: #8D0000;}
+.thirdLevel .tag_cont{float: left;line-height: 55px;}
+.thirdLevel .tag_cont a:link{color: #003b7e;padding: 0 5px;}
+.thirdLevel .tag_cont a:visited{color: #003b7e;padding: 0 5px;}
+.thirdLevel .tag_cont a:hover{color: #8D0000;}
+.tag_cont .current{font-weight: bold!important;}
+
+.ct_p_05{*zoom:1;position:relative;}
+.ct_p_05 .ct_box{display:inline;position:relative;text-align:left;*zoom:1;}
+.ct_p_05 .ct_txt{display:block;line-height:18px;*line-height:20px;overflow:hidden;margin-top:5px;color:#1a3356;cursor:pointer;position:relative;font-weight: bold;}
+.ct_p_05 a:link,.ct_p_05 a:visited{color:#1a3356;text-decoration:none;}
+.ct_p_05 a:hover{color:#1a3356;text-decoration:none;}
+.ct_p_05 a:hover .ct_txt{color:#8d0000;}
+
+.list_01{line-height:24px;font-size:14px;*zoom:1;}
+.list_01 li{padding-left:12px;background:url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_repeatImages.png) no-repeat 0px -157px;}
+.list_01 li a{color:#393939;}
+.list_01 li a:visited{color:#393939;}
+.list_01 li a:hover{color:#727272; text-decoration:underline;}
+
+/*分页*/
+.pagebox { font-size:12px; margin-bottom:10px;padding-top:20px }
+.pagebox a, .pagebox a:visited, .pagebox a:link { border:1px solid #d2d0d0; color:#003b7e; cursor:pointer; height:21px; line-height:21px; padding:0 8px; text-decoration:none; display:inline-block; overflow:hidden; margin-right:4px; }
+.pagebox a:hover { background:#003b7e none repeat scroll 0 0; color:#FFFFFF; border-color:#003b7e }
+.pagebox span.pagebox_cur_page { color:#fff; cursor:default; font-weight:bold; height:23px; line-height:23px; padding:0 8px; display:inline-block; overflow:hidden; margin-right:4px; background: #003b7e}
+
+.pagebox .btn_on {background: #f5f4f4}
+.pagebox .btn_off {border:1px solid #d2d0d0; color:#6c6c6d; cursor:default; height:21px; line-height:21px; padding:0 8px; text-decoration:none; display:inline-block; overflow:hidden; margin-right:4px;background: #f5f4f4}
+
+
+.wrap{overflow: hidden;}
+.part_01{width: 1000px;padding-bottom: 30px;}
+
+.part_01 .blk_01{float: left;border-bottom: 1px solid #e1e1e1;padding-bottom: 20px;margin-top: 20px;width: 450px;margin-right: 50px;height:140px;overflow:hidden;}
+.blk_01 .b_left{float: left;width: 200px;}
+.blk_01 .b_right{float: left;width: 240px;margin-left: 10px;}
+.blk_01 .ct_p_05 .ct_txt{color: #003b7e;}
+.blk_01 .list_01{line-height: 22px;}
+</style>
+
+</head>
+<body>
+
+<div class='bannerBack'>
+	<div class='banner'>
+		<style>
+.bannerSearch .input_01{line-height:23px;padding-left:5px; }
+.bannerSearch .submit_01{background: url(http://ui.sina.com/pub/eng/0903/0820_eng_zyc_searchBtn.png) 0 0 no-repeat;}
+.bannerWeather span{position:relative}
+</style>
+<div class='bannerLogo'><a href="http://english.sina.com/"><img src="http://img.news.sina.com/temp/5029/3/2015/0602/U22P5029T3D557F77DT20150611151014.gif"></a></div>
+
+<div class='bannerSearch'>
+	<div class='w_div'>
+		<form action="http://search.english.sina.com" method="get" target="_blank">
+	    <input name="c" type="hidden" value="english" />
+	    <input name="sort" type="hidden" value="time" />
+	
+		<input type='input' name="q" class='input_01' /><span>News</span><input type='submit' class='submit_01' value='' /> 
+		</form>
+	</div>
+</div>
+
+<div class="bannerInfo">
+	<span class="currentInfo"  id='currentInfo'></span>
+	<span class="currentTime"  id='currentTime'></span>
+	<span class="currentDate"  id='currentDate'></span>
+</div>
+<div class='bannerWeather' id="WeatherToday" ></div>
+<script type="text/javascript">
+setCurrentTime('currentTime','currentDate','currentInfo');//根据当前时区计算服务器时间并填充
+setWeather('WeatherToday');//填充当前天气
+</script>
+
+	</div>
+</div>
+
+<a name=top></a>
+<div class='navBack'>
+	<div class='nav'>
+				<div class="item "><a href="http://english.sina.com/index.html" class='itemA'><span>Home</span></a></div>
+
+<div class="item"  onmouseover="toggleNav.open(this)" onMouseOut="toggleNav.close(this)"><a href="http://english.sina.com/index.html" class='navList'   ontouchstart = 'toggleNav.change(this);return false'><span>News</span></a>
+	<div class='shadowDiv'></div>
+	<div class='listDiv' style='width:658px'>
+		<table width='100%' cellspacing=0 cellpadding=0>
+			<tr><td><dl>
+				<dt><a href="http://english.sina.com/news/china/">China</a></dt>
+				<dd><a href="http://english.sina.com/news/china/politics.html">Politics</a></dd>
+				<dd><a href="http://english.sina.com/news/china/society.html">Society</a></dd>
+				<dd><a href="http://english.sina.com/news/china/defense-and-diplomacy.html">Defense And Diplomacy</a></dd>
+				<dd><a href="http://english.sina.com/news/china/environment.html">Environment</a></dd>
+
+			</dl></td>
+			<td><dl>
+				<dt><a href="http://english.sina.com/news/world/">World</a></dt>
+				<dd><a href="http://english.sina.com/news/world/asia-pacific.html">Asia-Pacific</a></dd>
+				<dd><a href="http://english.sina.com/news/world/americas.html">Americas</a></dd>
+				<dd><a href="http://english.sina.com/news/world/europe.html">Europe</a></dd>
+				<dd><a href="http://english.sina.com/news/world/middleeast.html">Middle East</a></dd>
+				<dd><a href="http://english.sina.com/news/world/africa.html">Africa</a></dd>
+
+			</dl></td>
+			<td><dl>
+				<dt><a href="http://english.sina.com/news/biz-tech/">Buz & Tech</a></dt>
+				<dd><a href="http://english.sina.com/news/biz-tech/economy.html">Finance & Economy</a></dd>
+				<dd><a href="http://english.sina.com/news/biz-tech/business.html">Business & Industry</a></dd>
+				<dd><a href="http://english.sina.com/news/biz-tech/scitech.html">Science & Tech</a></dd>
+				<dd><a href="http://english.sina.com/news/biz-tech/stocks.html">Markets</a></dd>
+			</dl></td>
+			<td><dl>
+				<dt><a href="http://english.sina.com/news/entertainment/">Entertainment</a></dt>
+				<dd><a href="http://english.sina.com/news/entertainment/celebrity.html">Celebrity</a></dd>
+				<dd><a href="http://english.sina.com/news/entertainment/movie.html">Movie</a></dd>
+				<dd><a href="http://english.sina.com/news/entertainment/music.html">Music</a></dd>
+				<dd><a href="http://english.sina.com/news/entertainment/tv.html">TV</a></dd>				
+				<dd><a href="http://english.sina.com/news/entertainment/others.html">Others</a></dd>
+			</dl></td>
+			<td><dl>
+				<dt><a href="http://english.sina.com/news/sports/">Sports</a></dt>
+				<dd><a href="http://english.sina.com/news/sports/soccer.html">Soccer</a></dd>
+				<dd><a href="http://english.sina.com/news/sports/basketball.html">Basketball</a></dd>
+				<dd><a href="http://english.sina.com/news/sports/tennis-golf.html">Tennis & Golf</a></dd>
+				<dd><a href="http://english.sina.com/news/sports/others.html">Others</a></dd>
+				<dd><a href="http://english.sina.com/news/sports/press-release.html">Press release</a></dd>
+				
+			</dl></td>
+			<td class='noBorder'><dl>
+				<dt><a href="http://english.sina.com/news/culture/">Cultural Bridge</a></dt>
+				<dd><a href="http://english.sina.com/news/culture/heritage-art.html">Heritage & Art</a></dd>
+
+				<dd><a href="http://english.sina.com/news/culture/education.html">Education</a></dd>
+				<dd><a href="http://english.sina.com/news/culture/health.html">Health</a></dd>
+
+				<dd><a href="http://english.sina.com/news/culture/history.html">History</a></dd>
+				<dd><a href="http://english.sina.com/news/culture/people-to-people.html">People to People</a></dd>
+				<dd><a href="http://english.sina.com/news/culture/travel.html">Travel</a></dd>
+
+				</dl></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+<div class="item "><a href="http://english.sina.com/weibo/" class='itemA'><span>Weibo</span></a></div>
+
+<div class="item "><a href="http://english.sina.com/photo/" class='itemA'><span>Photo</span></a></div>
+
+<div class="item "><a href="http://english.sina.com/video/" class='itemA'><span>Video</span></a></div>
+
+<div class="item currentItem"><a href="http://english.sina.com/specialcoverage/" class='itemA'><span>Special Coverage</span></a></div>
+	</div>
+</div>
+
+<div class="wrap">
+
+	<div class="subNav thirdLevel">
+		<div class="tag"><a href="http://english.sina.com/specialcoverage/" target="_blank">Special Coverage</a></div>
+		<div class="tag_cont"><a  href="/specialcoverage/china.html">China</a>|<a  class="current" href="/specialcoverage/world.html">World</a>|<a  href="/specialcoverage/biz-tech.html">Business & Professions</a>|<a  href="/specialcoverage/ent.html">Entertainment</a>|<a  href="/specialcoverage/sports.html" >Sports</a>|<a  href="/specialcoverage/culture.html">Cultural Bridge</a></div>
+	</div>
+	
+	<div class='part_01 clearfix'>
+	
+		<div id=show_data></div>
+		
+		<!--分页start-->
+		<table cellspacing="0" style="margin:0 auto;clear:both">
+			<tr>
+				<td>
+					<div class="pagebox" id="_function_code_page">
+			
+					<div id="show_page"></div>
+			
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!--分页end-->
+	<!--part_01 end-->
+	</div>
+	
+	<!--footer start-->
+	<div id="footer">
+		<div class="FW970">
+		<p>SINA English is the English-language destination for news and information about China. Find general information on life, culture and travel in China through our news and special reports or find business partners through our online Business Directory. For investment opportunities with SINA, please click the link "Investor" below.</p>
+		<p>| <a href="http://corp.sina.com.cn/eng/">About SINA</a> | <a href="http://corp.sina.com.cn/eng/sina_rela_eng.htm">Investor</a> | <a href="http://mediakit.sina.com/">Media Kit</a> | <a href="mailto:english@staff.sina.com.cn">Comments or Question?</a> |</p>
+		<p>Copyright &copy 1996-2016 SINA Corporation, All Rights Reserved </p>
+		</div>
+	</div>
+	<!--footer end-->
+</div>
+
+<script language=javascript>
+var count=12;
+var dt_i=0;
+var data_i=0;
+var data_p=new Array();
+
+
+	data_p[0]=new Array();
+	data_p[0][0]='<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20161021election/index.shtml" target="_blank"><img width="200" height="105" alt="2016 US presidential election" src="http://img.news.sina.com/temp/5029/3/2016/1027/U47P5029T3D586F74DT20161027162719.jpg"><span class="ct_txt">2016 US presidential election</span></a></div></div></div><div class="b_right"><ul class="list_01">		 <li><a href="http://english.sina.com/buz/b/2016-11-22/detail-ifxxwrwh4887825.shtml" target="_blank">Trump says will move to withdraw from TPP &#39;on day one&#39;</a></li>		 <li><a href="http://english.sina.com/world/as/2016-11-21/detail-ifxxwrwh4800308.shtml" target="_blank">Trump, Pence address potential Cabinet picks</a></li>		 <li><a href="http://english.sina.com/world/am/2016-11-18/detail-ifxxwrwh4608867.shtml" target="_blank">Trump offers Flynn national security adviser job</a></li></ul></div></div>'
+	data_p[1] = new Array();
+	data_p[1][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20160106northkoreahbomb/index.shtml" target="_blank"><img width="200" height="105" alt="North Korea conducts &#39;successful&#39; H-bomb tes" src="http://img.news.sina.com/temp/5029/3/2016/0106/U47P5029T3D577F70DT20160106154744.jpg"><span class="ct_txt">North Korea conducts &#39;successful&#39; H-bomb tes</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/news/2016/0113/881148.html" target="_blank">U.S. hosility behind DPRK&#39;s nuclear brinkmanship</a></li><li><a href="http://english.sina.com/news/2016/0111/880751.html" target="_blank">S. Korea, U.S. to stage annual joint war games with eye to DPRK nuke program</a></li><li><a href="http://english.sina.com/world/2016/0110/880233.html" target="_blank">US bomber flies over S. Korea as show of force against North</a></li></ul></div></div>';
+	data_p[2] = new Array();
+	data_p[2][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20151114parisattacks/index.shtml" target="_blank"><img width="200" height="105" alt="Deadly attacks shock Paris" src="http://img.news.sina.com/temp/5029/3/2015/1114/U47P5029T3D575F68DT20151114123216.jpg"><span class="ct_txt">Deadly attacks shock Paris</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2016/0124/884677.html" target="_blank">IS releases video of &#39;Paris attackers&#39;</a></li><li><a href="http://english.sina.com/world/2016/0124/884667.html" target="_blank">Islamic State video purports to show Paris attackers, threatens Britain</a></li><li><a href="http://english.sina.com/world/2015/1129/869352.html" target="_blank">Obama, Hollande pay respects to Paris attack victims</a></li></ul></div></div>';
+	data_p[3] = new Array();
+	data_p[3][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/150427nepalquake/index.shtml" target="_blank"><img width="200" height="105" alt="Powerful earthquake hits Nepal" src="http://img.news.sina.com/temp/5029/3/2015/0427/U47P5029T3D549F69DT20150427114352.jpg"><span class="ct_txt">Powerful earthquake hits Nepal</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/china/2015/0527/814835.html" target="_blank">China&#39;s medical assistance raises national capacity to prevent epidemics: Nepal</a></li><li><a href="http://english.sina.com/china/p/2015/0519/812168.html" target="_blank">Nepal earthquake moves Tibetan towns south</a></li><li><a href="http://english.sina.com/taiwan_hk/2015/0515/811176.html" target="_blank">HK grants 903,000 USD to help quake victims in Nepal</a></li></ul></div></div>';
+	data_p[4] = new Array();
+	data_p[4][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20150323leekuanyew/index.shtml" target="_blank"><img width="200" height="105" alt="SINGAPORE&#39;S FOUNDING FATHER DIES" src="http://img.news.sina.com/temp/5029/3/2015/0323/U47P5029T3D543F68DT20150323113046.jpg"><span class="ct_txt">SINGAPORE&#39;S FOUNDING FATHER DIES</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2015/0330/796891.html" target="_blank">Singapore teen behind anti-Lee Kuan Yew video faces charges</a></li><li><a href="http://english.sina.com/world/2015/0329/796432.html" target="_blank">Scenes of emotion as Singapore mourns Lee Kuan Yew</a></li><li><a href="http://english.sina.com/world/p/2015/0329/796302.html" target="_blank">Lee Kuan Yew eulogized at funeral as architect of Singapore</a></li></ul></div></div>';
+	data_p[5] = new Array();
+	data_p[5][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/Parissatricalnewspapershooting/index.shtml" target="_blank"><img width="200" height="105" alt="Paris satrical newspaper shooting" src="http://img.news.sina.com/temp/5029/3/2015/0108/U211P5029T3D539F68DT20150108104326.jpg"><span class="ct_txt">Paris satrical newspaper shooting</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2015/0214/783371.html" target="_blank">&#39;We are all Danish tonight,&#39; says Charlie Hebdo columnist</a></li><li><a href="http://english.sina.com/world/2015/0208/781325.html" target="_blank">British Muslims protest in London against Charlie Hebdo cartoons</a></li><li><a href="http://english.sina.com/world/2015/0202/779401.html" target="_blank">Next edition of Charlie Hebdo to appear Feb 25</a></li></ul></div></div>';
+	data_p[6] = new Array();
+	data_p[6][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20141229airasiajet/index.shtml" target="_blank"><img width="200" height="105" alt="AirAsia plane disappears with 162 people on board" src="http://img.news.sina.com/temp/5029/3/2014/1229/U47P5029T3D538F68DT20141229214608.jpg"><span class="ct_txt">AirAsia plane disappears with 162 people on board</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2015/1201/869723.html" target="_blank">AirAsia crash due to faulty component, crew action: probe</a></li><li><a href="http://english.sina.com/world/2015/0208/781317.html" target="_blank">AirAsia jet turns back to Malaysia due to technical problem</a></li><li><a href="http://english.sina.com/world/2015/0202/779377.html" target="_blank">Six more AirAsia crash victims found: Indonesian official</a></li></ul></div></div>';
+	data_p[7] = new Array();
+	data_p[7][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/141225newsreview/index.shtml" target="_blank"><img width="200" height="105" alt="2014 : A Year In News Stories Review" src="http://img.news.sina.com/temp/5029/3/2014/1225/U47P5029T3D537F68DT20141225104402.jpg"><span class="ct_txt">2014 : A Year In News Stories Review</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[8] = new Array();
+	data_p[8][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/141223newsreview/index.shtml" target="_blank"><img width="200" height="105" alt="2014 : A Year In News Stories Review" src="http://img.news.sina.com/temp/5029/3/2014/1225/U47P5029T3D537F68DT20141225104402.jpg"><span class="ct_txt">2014 : A Year In News Stories Review</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[9] = new Array();
+	data_p[9][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20140718MH17/index.shtml" target="_blank"><img width="200" height="105" alt="Malaysia Airlines plane crashes in Ukraine" src="http://img.news.sina.com/temp/5029/3/2014/0718/U45P5029T3D522F68DT20140718133748.jpg"><span class="ct_txt">Malaysia Airlines plane crashes in Ukraine</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2015/1015/856093.html" target="_blank">Russian envoy refutes Dutch MH17 crash report</a></li><li><a href="http://english.sina.com/world/2015/1014/855740.html" target="_blank">MH17 crash report released</a></li><li><a href="http://english.sina.com/world/p/2015/1013/855628.html" target="_blank">MH17 wreckage reveals horror of plane&#39;s last moments</a></li></ul></div></div>';
+	data_p[10] = new Array();
+	data_p[10][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20140310flight/index.shtml" target="_blank"><img width="200" height="105" alt="Malaysia Airlines flight missing" src="http://img.news.sina.com/temp/5029/3/2014/0310/U47P5029T3D500F69DT20140310140110.jpg"><span class="ct_txt">Malaysia Airlines flight missing</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2016/0302/895187.html" target="_blank">Mozambique debris to be sent to Australia for MH370 analysis</a></li><li><a href="http://english.sina.com/world/p/2016/0302/895105.html" target="_blank">Australian transport chief says debris find consistent with MH370 modeling</a></li><li><a href="http://english.sina.com/news/2016/0128/886019.html" target="_blank">China&#39;s ship to join search for missing MH370 jet in Indian Ocean</a></li></ul></div></div>';
+	data_p[11] = new Array();
+	data_p[11][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20140310plane/index.shtml" target="_blank"><img width="200" height="105" alt="Malaysia Airlines flight missing" src="http://img.news.sina.com/temp/5029/3/2014/0310/U47P5029T3D500F69DT20140310140110.jpg"><span class="ct_txt">Malaysia Airlines flight missing</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2014/1127/758541.html" target="_blank">Mother of missing MH370 passenger gets through to son&#39;s phone number</a></li><li><a href="http://english.sina.com/world/2014/0528/704572.html" target="_blank">Acoustic pings at heart of MH370 hunt "not likely from black box"</a></li><li><a href="http://english.sina.com/world/2014/0528/704359.html" target="_blank">MH370 relatives accuse Malaysia of withholding data</a></li></ul></div></div>';
+	data_p[12] = new Array();
+	data_p[12][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20131206mandela/index.shtml" target="_blank"><img width="200" height="105" alt="Nelson Mandela dies at 95" src="http://img.news.sina.com/temp/5029/3/2013/1206/U47P5029T3D499F68DT20131206113453.jpg"><span class="ct_txt">Nelson Mandela dies at 95</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2013/1216/655574.html" target="_blank">Bronze statue of Mandela to be unveiled</a></li><li><a href="http://english.sina.com/world/2013/1212/654820.html" target="_blank">Mandela sign language interpreter: I saw angels</a></li><li><a href="http://english.sina.com/world/2013/1211/654397.html" target="_blank">Mandela memorial sign language interpreter a &#39;fraud&#39;</a></li></ul></div></div>';
+	data_p[13] = new Array();
+	data_p[13][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/131118russiacrash/index.shtml" target="_blank"><img width="200" height="105" alt="50 killed in Russia plane crash" src="http://img.news.sina.com/temp/5029/3/2013/1118/U47P5029T3D492F68DT20131118151414.jpg"><span class="ct_txt">50 killed in Russia plane crash</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/1118/647412.html" target="_blank">Video shows near-vertical crash of Russian plane</a></li><li><a href="http://english.sina.com/world/2013/1118/647208.html" target="_blank">Russia mourns Kazan air crash victims</a></li><li><a href="http://english.sina.com/world/2013/1117/647178.html" target="_blank">Kazan Airport Closed Due To Boeing 737 Crash</a></li></ul></div></div>';
+	data_p[14] = new Array();
+	data_p[14][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130704egyptcoup/index.shtml" target="_blank"><img width="200" height="105" alt="Egypt in chaos after coup topples Morsi" src="http://img.news.sina.com/temp/5029/3/2013/0704/U47P5029T3D489F68DT20130704114844.jpg"><span class="ct_txt">Egypt in chaos after coup topples Morsi</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/1102/642704.html" target="_blank">Egypt to lift curfew on November 14</a></li><li><a href="http://english.sina.com/world/2013/0819/620388.html" target="_blank">Egypt&#39;s Muslim Brotherhood top leader arrested in Cairo</a></li><li><a href="http://english.sina.com/world/2013/0817/619847.html" target="_blank">Protests dispersed in Cairo mosque as Egypt considers banning MB</a></li></ul></div></div>';
+	data_p[15] = new Array();
+	data_p[15][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20130624Mandela/index.shtml" target="_blank"><img width="200" height="105" alt="Mandela critically ill in hospital" src="http://img.news.sina.com/z/20130624Mandela/idx/2013/0723/U166P5029T27D1018F336DT20130723165144.jpg"><span class="ct_txt">Mandela critically ill in hospital</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/2013/0808/616804.html" target="_blank">Mandela breathing normally: ex-wife</a></li><li><a href="http://english.sina.com/world/p/2013/0807/616561.html" target="_blank">Prayers as Mandela marks two months in hospital</a></li><li><a href="http://english.sina.com/world/2013/0722/611220.html" target="_blank">Mandela&#39;s health continues to show "sustained improvement": presidency</a></li></ul></div></div>';
+	data_p[16] = new Array();
+	data_p[16][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20130617snowden/index.shtml" target="_blank"><img width="200" height="105" alt="Edward Snowden, the whistle-blower" src="http://img.news.sina.com/temp/5029/3/2013/0614/U142P5029T3D487F69DT20130618180409.jpg"><span class="ct_txt">Edward Snowden, the whistle-blower</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/1225/658194.html" target="_blank">Snowden warns of loss of privacy in Christmas message</a></li><li><a href="http://english.sina.com/world/2013/1102/642709.html" target="_blank">Snowden &#39;free to talk&#39; to Germans: Kremlin</a></li><li><a href="http://english.sina.com/world/2013/1101/642516.html" target="_blank">Snowden ready to help German probe into U.S. Spying</a></li></ul></div></div>';
+	data_p[17] = new Array();
+	data_p[17][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130525review/index.shtml" target="_blank"><img width="200" height="105" alt="Weekly Review: May.25 -- May.31" src="http://img.news.sina.com/temp/5029/3/2013/0220/U45P5029T3D422F68DT20130220195403.jpg"><span class="ct_txt">Weekly Review: May.25 -- May.31</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[18] = new Array();
+	data_p[18][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130524review/index.shtml" target="_blank"><img width="200" height="105" alt="Weekly Review: May.18 -- May.24" src="http://img.news.sina.com/temp/5029/3/2013/0412/U47P5029T3D465F68DT20130412135025.jpg"><span class="ct_txt">Weekly Review: May.18 -- May.24</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[19] = new Array();
+	data_p[19][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130517review/index.shtml" target="_blank"><img width="200" height="105" alt="Weekly Review: May.11 -- May.17" src="http://img.news.sina.com/temp/5029/3/2013/0412/U47P5029T3D465F68DT20130412135025.jpg"><span class="ct_txt">Weekly Review: May.11 -- May.17</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[20] = new Array();
+	data_p[20][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20130510review/index.shtml" target="_blank"><img width="200" height="105" alt="Weekly Review: May.4 -- May.10" src="http://img.news.sina.com/temp/5029/3/2013/0412/U47P5029T3D465F68DT20130412135025.jpg"><span class="ct_txt">Weekly Review: May.4 -- May.10</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[21] = new Array();
+	data_p[21][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130503review/index.shtml" target="_blank"><img width="200" height="105" alt="Weekly Review: Apr.27 -- May.3" src="http://img.news.sina.com/temp/5029/3/2013/0220/U45P5029T3D422F68DT20130220195403.jpg"><span class="ct_txt">Weekly Review: Apr.27 -- May.3</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[22] = new Array();
+	data_p[22][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20130416bostonmarathon/index.shtml" target="_blank"><img width="200" height="105" alt="Deadly blasts rock Boston Marathon" src="http://img.news.sina.com/temp/5029/3/2013/0416/U166P5029T3D466F68DT20130416134440.jpg"><span class="ct_txt">Deadly blasts rock Boston Marathon</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/0808/617018.html" target="_blank">U.S. indicts 2 friends of Boston bombing suspect</a></li><li><a href="http://english.sina.com/world/2013/0710/607440.html" target="_blank">Boston Marathon bombing suspect pleads not guilty</a></li><li><a href="http://english.sina.com/world/p/2013/0710/607285.html" target="_blank">Accused Boston bomber to make first court appearance</a></li></ul></div></div>';
+	data_p[23] = new Array();
+	data_p[23][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130409thatcher/index.shtml" target="_blank"><img width="200" height="105" alt="Iron Lady Margaret Thatcher dies at 87" src="http://img.news.sina.com/temp/5029/3/2013/0409/U47P5029T3D461F68DT20130409134808.jpg"><span class="ct_txt">Iron Lady Margaret Thatcher dies at 87</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/0417/583076.html" target="_blank">Thatcher laid to rest</a></li><li><a href="http://english.sina.com/culture/p/2013/0417/583055.html" target="_blank">Time had stood still: echoes of Churchill&#39;s funeral</a></li><li><a href="http://english.sina.com/world/p/2013/0417/582948.html" target="_blank">Thatcher&#39;s funeral held</a></li></ul></div></div>';
+	data_p[24] = new Array();
+	data_p[24][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130402korea/index.shtml" target="_blank"><img width="200" height="105" alt="Rising tensions on the Korean peninsula" src="http://img.news.sina.com/temp/5029/3/2013/0402/U47P5029T3D457F68DT20130402162652.jpg"><span class="ct_txt">Rising tensions on the Korean peninsula</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/0808/616748.html" target="_blank">DPRK anticipates fruitful results at Kaesong dialogue</a></li><li><a href="http://english.sina.com/world/2013/0807/616578.html" target="_blank">UN body gives food aid to N. Korean flood victims: report</a></li><li><a href="http://english.sina.com/world/p/2013/0807/616538.html" target="_blank">UN team to inspect N. Korean ship impounded in Panama</a></li></ul></div></div>';
+	data_p[25] = new Array();
+	data_p[25][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/130328review/index.shtml" target="_blank"><img width="200" height="105" alt="Weekly Review: Mar.23 -- Mar.29" src="http://img.news.sina.com/temp/5029/3/2013/0329/U142P5029T3D453F70DT20130329223107.jpg"><span class="ct_txt">Weekly Review: Mar.23 -- Mar.29</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[26] = new Array();
+	data_p[26][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20130306chavez/index.shtml" target="_blank"><img width="200" height="105" alt="Venezuelan leader Hugo Chavez dies at 58" src="http://img.news.sina.com/temp/5029/3/2013/0306/U47P5029T3D435F68DT20130306114723.jpg"><span class="ct_txt">Venezuelan leader Hugo Chavez dies at 58</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/0312/570848.html" target="_blank"> Chavez legacy to endure: Cuban expert</a></li><li><a href="http://english.sina.com/world/p/2013/0310/569992.html" target="_blank">Venezuela opposition leader joins presidential race</a></li><li><a href="http://english.sina.com/world/2013/0309/569798.html" target="_blank">Details emerge of Chavez&#39; final days</a></li></ul></div></div>';
+	data_p[27] = new Array();
+	data_p[27][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20121227clinton/index.shtml" target="_blank"><img width="200" height="105" alt="Hillary Clinton to leave the limelight behind" src="http://img.news.sina.com/temp/5029/3/2012/1227/U47P5029T3D420F68DT20121227180527.jpg"><span class="ct_txt">Hillary Clinton to leave the limelight behind</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/0128/554731.html" target="_blank">Barack Obama and Hillary Clinton appear in joint &#39;60 Minutes&#39; interview</a></li><li><a href="http://english.sina.com/world/2013/0128/554722.html" target="_blank">Fiscal mess would have been fixed, if Clinton had been US President</a></li><li><a href="http://english.sina.com/world/2013/0128/554697.html" target="_blank">Clinton preps to leave, Obama doesn&#39;t mince words on praise</a></li></ul></div></div>';
+	data_p[28] = new Array();
+	data_p[28][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20121203yearreview/index.shtml" target="_blank"><img width="200" height="105" alt="2012, The Events; The People" src="http://img.news.sina.com/temp/5029/3/2012/1214/U142P5029T3D419F68DT20121214123927.jpg"><span class="ct_txt">2012, The Events; The People</span></a></div></div></div><div class="b_right"><ul class="list_01"></ul></div></div>';
+	data_p[29] = new Array();
+	data_p[29][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20121119gaza/index.shtml" target="_blank"><img width="200" height="105" alt="Israel and Palestine: New war is looming?" src="http://img.news.sina.com/temp/5029/3/2012/1119/U47P5029T3D418F68DT20121119174126.jpg"><span class="ct_txt">Israel and Palestine: New war is looming?</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/1217/539042.html" target="_blank">Palestine, Israel brace for new clash? </a></li><li><a href="http://english.sina.com/world/2012/1203/533665.html" target="_blank">Israeli settlement plan draws worldwide criticisms</a></li><li><a href="http://english.sina.com/world/2012/1203/533458.html" target="_blank">Israel troops kill axe-wielding Palestinian: police</a></li></ul></div></div>';
+	data_p[30] = new Array();
+	data_p[30][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120918islamprotestus/index.shtml" target="_blank"><img width="200" height="105" alt="Surge of Islamic protests against U.S." src="http://img.news.sina.com/5029/3/2012/1018/U47P5029T3D406F69DT20121018162033.jpg"><span class="ct_txt">Surge of Islamic protests against U.S.</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/1128/532032.html" target="_blank">Egypt court sentences 8 to death over prophet film</a></li><li><a href="http://english.sina.com/world/2012/1030/521534.html" target="_blank">Middle East to meet a new big wave after US elections</a></li><li><a href="http://english.sina.com/world/2012/1015/516537.html" target="_blank">Clinton &#39;takes responsibility&#39; for handling of Libya attack  </a></li></ul></div></div>';
+	data_p[31] = new Array();
+	data_p[31][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120913uselection/index.shtml" target="_blank"><img width="200" height="105" alt="U.S. 2012 general election" src="http://img.news.sina.com/5029/3/2012/1018/U47P5029T3D406F68DT20121018161828.jpg"><span class="ct_txt">U.S. 2012 general election</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2012/1207/535184.html" target="_blank">2012 election most expensive in American history</a></li><li><a href="http://english.sina.com/world/2012/1129/532458.html" target="_blank">Obama, Romney meet for lunch</a></li><li><a href="http://english.sina.com/world/p/2012/1114/526892.html" target="_blank">Obama lays out second-term agenda in post-election press meeting </a></li></ul></div></div>';
+	data_p[32] = new Array();
+	data_p[32][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120904apec/index.shtml" target="_blank"><img width="200" height="105" alt="APEC 2012 in Russia" src="http://img.news.sina.com/5029/3/2012/0905/U47P5029T3D394F68DT20120905173118.jpg"><span class="ct_txt">APEC 2012 in Russia</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/china/2012/0909/504799.html" target="_blank">Hu&#39;s APEC attendance yields 5-aspect fruits: FM </a></li><li><a href="http://english.sina.com/world/2012/0909/504782.html" target="_blank">APEC injects new impetus into integration, growth</a></li><li><a href="http://english.sina.com/world/2012/0909/504770.html" target="_blank">APEC summit wraps up with joint commitment on development</a></li></ul></div></div>';
+	data_p[33] = new Array();
+	data_p[33][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120814japanrowneighbor/index.shtml" target="_blank"><img width="200" height="105" alt="Japan in islands row" src="http://img.news.sina.com/5029/3/2012/0814/U47P5029T3D386F68DT20120814121709.jpg"><span class="ct_txt">Japan in islands row</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2013/0224/564916.html" target="_blank">S. Korean businesses to boycott Japanese products pver island row</a></li><li><a href="http://english.sina.com/china/2012/1212/537331.html" target="_blank">Chinese airplane enters air space over the Diaoyus: Japanese media </a></li><li><a href="http://english.sina.com/china/2012/1207/535171.html" target="_blank">Chinese ships conduct Diaoyu Islands sea patrol</a></li></ul></div></div>';
+	data_p[34] = new Array();
+	data_p[34][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120530houla/index.shtml" target="_blank"><img width="200" height="105" alt="Houla Massacre: Could it be Syria&#39;s tipping point?" src="http://img.news.sina.com/5029/3/2012/0530/U47P5029T3D328F68DT20120530134535.jpg"><span class="ct_txt">Houla Massacre: Could it be Syria&#39;s tipping point?</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0627/480852.html" target="_blank">UN investigators yet to determine perpetrators of Houla killings</a></li><li><a href="http://english.sina.com/china/2012/0618/477941.html" target="_blank">China urges Syria to cooperate with UN</a></li><li><a href="http://english.sina.com/world/p/2012/0610/475080.html" target="_blank">Assad&#39;s Syria regime on &#39;last legs&#39;, says opponent</a></li></ul></div></div>';
+	data_p[35] = new Array();
+	data_p[35][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120509SyrianSituation/index.shtml" target="_blank"><img width="200" height="105" alt="2012 Syrian Situation" src="http://img.news.sina.com/5029/3/2012/0509/U48P5029T3D304F68DT20120509171326.jpg"><span class="ct_txt">2012 Syrian Situation</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2012/1021/518586.html" target="_blank">13 killed in Damascus car bombing amid UN envoy visit</a></li><li><a href="http://english.sina.com/world/2012/0823/499411.html" target="_blank">Incessant clashes sweep Syria</a></li><li><a href="http://english.sina.com/world/2012/0822/499043.html" target="_blank">Raging battles persist across Syria, UN observers keep leaving</a></li></ul></div></div>';
+	data_p[36] = new Array();
+	data_p[36][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120423FrenchElection/index.shtml" target="_blank"><img width="200" height="105" alt="2012 French Election" src="http://img.news.sina.com/5029/3/2012/0423/U48P5029T3D285F68DT20120423153051.jpg"><span class="ct_txt">2012 French Election</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0516/468071.html" target="_blank">France&#39;s Hollande to give moderates key cabinet jobs</a></li><li><a href="http://english.sina.com/world/p/2012/0515/467816.html" target="_blank">Francois Hollande becomes France&#39;s new president</a></li><li><a href="http://english.sina.com/world/2012/0515/467737.html" target="_blank">Hollande sworn in as president of France</a></li></ul></div></div>';
+	data_p[37] = new Array();
+	data_p[37][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120417pulitzer/index.shtml" target="_blank"><img width="200" height="105" alt="2012 Pulitzer winners announced" src="http://img.news.sina.com/5029/3/2012/0417/U47P5029T3D279F68DT20120417181708.jpg"><span class="ct_txt">2012 Pulitzer winners announced</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0417/458849.html" target="_blank">Online news website wins its first Pulitzer prize</a></li><li><a href="http://english.sina.com/world/2012/0417/458848.html" target="_blank">No fiction Pulitzer given for 1st time in 35 years</a></li></ul></div></div>';
+	data_p[38] = new Array();
+	data_p[38][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120412earthquake/index.shtml" target="_blank"><img width="200" height="105" alt="Massive quakes hit N Sumatra, Indonesia" src="http://img.news.sina.com/5029/3/2012/0412/U45P5029T3D273F68DT20120412143318.jpg"><span class="ct_txt">Massive quakes hit N Sumatra, Indonesia</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0413/457807.html" target="_blank">Indonesia to make high buildings serve as shelters in tsunami</a></li><li><a href="http://english.sina.com/world/p/2012/0412/457757.html" target="_blank">Prison wall collapses in Indonesia quake </a></li><li><a href="http://english.sina.com/world/2012/0412/457652.html" target="_blank">Indonesia quake a record, risks for Aceh grow</a></li></ul></div></div>';
+	data_p[39] = new Array();
+	data_p[39][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120411Titanic100/index.shtml" target="_blank"><img width="200" height="105" alt="100th anniversary of the Titanic tragedy" src="http://img.news.sina.com/5029/3/2012/0411/U48P5029T3D272F68DT20120411175438.jpg"><span class="ct_txt">100th anniversary of the Titanic tragedy</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/video/2012/0418/459708.html" target="_blank">The unreleased Titanic ending</a></li><li><a href="http://english.sina.com/video/2012/0416/458806.html" target="_blank">BBC: Titanic Southampton Remembers</a></li><li><a href="http://english.sina.com/world/p/2012/0416/458504.html" target="_blank">Prayers and silence mark Titanic centenary</a></li></ul></div></div>';
+	data_p[40] = new Array();
+	data_p[40][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120323/index.shtml" target="_blank"><img width="200" height="105" alt="DPRK&#39;s plan to launch satellite" src="http://img.news.sina.com/5029/3/2012/0323/U113P5029T3D258F68DT20120323171029.jpg"><span class="ct_txt">DPRK&#39;s plan to launch satellite</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2012/0427/462829.html" target="_blank">New photo shows work at NKorea nuclear test site</a></li><li><a href="http://english.sina.com/world/2012/0413/458002.html" target="_blank">China call for calm after DPRK satellite launch</a></li><li><a href="http://english.sina.com/world/2012/0413/457998.html" target="_blank">UNSC deplores DPRK&#39;s satellite launch</a></li></ul></div></div>';
+	data_p[41] = new Array();
+	data_p[41][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120301russianelection/index.shtml" target="_blank"><img width="200" height="105" alt="Russian presidential election 2012" src="http://img.news.sina.com/5029/3/2012/0302/U47P5029T3D254F68DT20120302163632.jpg"><span class="ct_txt">Russian presidential election 2012</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2012/0508/465913.html" target="_blank">Putin and Medvedev complete job swap in Russia</a></li><li><a href="http://english.sina.com/world/2012/0508/465910.html" target="_blank">Medvedev becomes Russia&#39;s new PM</a></li><li><a href="http://english.sina.com/world/2012/0507/465537.html" target="_blank">Putin pledges unity on return to Kremlin, protesters held</a></li></ul></div></div>';
+	data_p[42] = new Array();
+	data_p[42][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120224quranburning/index.shtml" target="_blank"><img width="200" height="105" alt="Afghan Quran burning protests" src="http://img.news.sina.com/5029/3/2012/0224/U47P5029T3D248F68DT20120224174639.jpg"><span class="ct_txt">Afghan Quran burning protests</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0229/444600.html" target="_blank">Obama defends apology over Koran burning</a></li><li><a href="http://english.sina.com/world/p/2012/0227/443587.html" target="_blank">Nine killed in Afghan airport bomb, NATO base attacked</a></li><li><a href="http://english.sina.com/world/2012/0226/443532.html" target="_blank">10 killed, 12 injured in E. Afghan airport suicide blast</a></li></ul></div></div>';
+	data_p[43] = new Array();
+	data_p[43][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/120209maldives/index.shtml" target="_blank"><img width="200" height="105" alt="Maldives crisis - Trouble in paradise" src="http://img.news.sina.com/5029/3/2012/0209/U47P5029T3D241F68DT20120209163404.jpg"><span class="ct_txt">Maldives crisis - Trouble in paradise</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0227/443929.html" target="_blank">Maldivian opposition demands early elections</a></li><li><a href="http://english.sina.com/world/2012/0217/440910.html" target="_blank">Commonwealth ministerial mission arrives in Male</a></li><li><a href="http://english.sina.com/world/2012/0217/440792.html" target="_blank">Opposition hails Indian intervention in Maldives</a></li></ul></div></div>';
+	data_p[44] = new Array();
+	data_p[44][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20120110/index.shtml" target="_blank"><img width="200" height="105" alt="US Presidential Election 2012" src="http://img.news.sina.com/5029/3/2012/0110/U45P5029T3D234F68DT20120110155808.jpg"><span class="ct_txt">US Presidential Election 2012</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0819/497866.html" target="_blank">Medicare row escalates with Romney&#39;s VP pick</a></li><li><a href="http://english.sina.com/world/2012/0811/495666.html" target="_blank">Romney goes "big" in choosing Ryan as running mate</a></li><li><a href="http://english.sina.com/world/2012/0507/465504.html" target="_blank">Obama, Romney tie in crucial swing states: poll</a></li></ul></div></div>';
+	data_p[45] = new Array();
+	data_p[45][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20111229worldtop10/index.shtml" target="_blank"><img width="200" height="105" alt="2011 Year in Review - World" src="http://img.news.sina.com/5029/3/2011/1229/U113P5029T3D216F68DT20111229174149.jpg"><span class="ct_txt">2011 Year in Review - World</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2011/1230/427654.html" target="_blank">IRANIAN NUCLEAR CRISIS WORSENS</a></li><li><a href="http://english.sina.com/world/p/2011/1230/427653.html" target="_blank">GLOBAL POPULATION EXCEEDS 7 BILLION</a></li><li><a href="http://english.sina.com/world/p/2011/1230/427635.html" target="_blank">DROUGHT IN HORN OF AFRICA LEADS TO HUMANITARIAN CATASTROPHE</a></li></ul></div></div>';
+	data_p[46] = new Array();
+	data_p[46][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20111219kimdies/index.shtml" target="_blank"><img width="200" height="105" alt="DPRK top leader Kim Jong Il dies" src="http://img.news.sina.com/5029/3/2011/1219/U47P5029T3D209F68DT20111219160349.jpg"><span class="ct_txt">DPRK top leader Kim Jong Il dies</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0101/428073.html" target="_blank">Kim Jong Un inspects KPA on new year&#39;s day</a></li><li><a href="http://english.sina.com/world/2011/1230/427844.html" target="_blank">DPRK to issue commemorative coins for Kim Jong Il</a></li><li><a href="http://english.sina.com/world/2011/1230/427817.html" target="_blank">DPRK party calls for unity under Kim Jong Un</a></li></ul></div></div>';
+	data_p[47] = new Array();
+	data_p[47][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20111129syria/index.shtml" target="_blank"><img width="200" height="105" alt="2011 Syrian uprising" src="http://img.news.sina.com/5029/3/2011/1129/U45P5029T3D201F68DT20111129155432.jpg"><span class="ct_txt">2011 Syrian uprising</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2012/0719/487824.html" target="_blank">Syrian diplomat denies Assad&#39;s wife in Russia</a></li><li><a href="http://english.sina.com/world/2012/0617/477712.html" target="_blank">UN demands civilian evacuations in Syria&#39;s Homs</a></li><li><a href="http://english.sina.com/world/2011/1208/421422.html" target="_blank">Syria closes border gate with Turkey</a></li></ul></div></div>';
+	data_p[48] = new Array();
+	data_p[48][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/111124yemensaleh/index.shtml" target="_blank"><img width="200" height="105" alt="Yemen president of 33 years quits amid uprising" src="http://img.news.sina.com/5029/3/2011/1125/U47P5029T3D199F68DT20111125160401.jpg"><span class="ct_txt">Yemen president of 33 years quits amid uprising</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/1128/418320.html" target="_blank">UN Security Council welcomes new Yemeni transition agreement</a></li><li><a href="http://english.sina.com/world/2011/1127/417919.html" target="_blank">Profile: Yemen&#39;s new PM Mohamed Salim Basindwa</a></li><li><a href="http://english.sina.com/world/2011/1127/417913.html" target="_blank">Yemen&#39;s vice president names new prime minister</a></li></ul></div></div>';
+	data_p[49] = new Array();
+	data_p[49][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20111114DubaiAirshow/index.shtml" target="_blank"><img width="200" height="105" alt="Dubai International Airshow" src="http://img.news.sina.com/5029/3/2011/1114/U45P5029T3D193F68DT20111114153916.jpg"><span class="ct_txt">Dubai International Airshow</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/video/2011/1114/414220.html" target="_blank">JF-17 Thunder Fighter in Dubai Air Show 2011</a></li><li><a href="http://english.sina.com/video/2011/1114/414219.html" target="_blank">MA 600 in Dubai Air Show 2011 </a></li><li><a href="http://english.sina.com/video/2011/1114/414218.html" target="_blank">French Air Force Rafale Fighter in Dubai Air Show 2011 </a></li></ul></div></div>';
+	data_p[50] = new Array();
+	data_p[50][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20111110Berlusconi/index.shtml" target="_blank"><img width="200" height="105" alt="Italian PM Silvio Berlusconi says to resign" src="http://img.news.sina.com/5029/3/2011/1111/U47P5029T3D192F68DT20111111145234.jpg"><span class="ct_txt">Italian PM Silvio Berlusconi says to resign</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/1114/414012.html" target="_blank">Italy&#39;s new premier Monti rushes to build new govt</a></li><li><a href="http://english.sina.com/world/p/2011/1113/413746.html" target="_blank">Monti named to head new Italy government</a></li><li><a href="http://english.sina.com/world/p/2011/1111/413510.html" target="_blank">Italy&#39;s Berlusconi to resign, end scandal-hit era</a></li></ul></div></div>';
+	data_p[51] = new Array();
+	data_p[51][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20111101g20/index.shtml" target="_blank"><img width="200" height="105" alt="G20 summit in Cannes" src="http://img.news.sina.com/5029/3/2011/1101/U48P5029T3D187F68DT20111101160649.jpg"><span class="ct_txt">G20 summit in Cannes</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/china/p/2011/1106/411721.html" target="_blank">Hu&#39;s speech at G20 draws positive int&#39;l comments</a></li><li><a href="http://english.sina.com/china/p/2011/1105/411597.html" target="_blank">Hu&#39;s European trip advances friendship, cooperation, win-win outcomes</a></li><li><a href="http://english.sina.com/business/2011/1104/411583.html" target="_blank">No time to lose to implement G20 summit consensus</a></li></ul></div></div>';
+	data_p[52] = new Array();
+	data_p[52][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/111024turkeyquake/index.shtml" target="_blank"><img width="200" height="105" alt="Strong earthquake strikes eastern Turkey" src="http://img.news.sina.com/5029/3/2011/1024/U47P5029T3D177F68DT20111024164042.jpg"><span class="ct_txt">Strong earthquake strikes eastern Turkey</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2011/1030/409790.html" target="_blank">Turkish workers clear debris in quake zone</a></li><li><a href="http://english.sina.com/world/2011/1028/409406.html" target="_blank">Boy&#39;s rescue five days after Turkish quake lifts</a></li><li><a href="http://english.sina.com/world/p/2011/1028/409386.html" target="_blank">13-year-old boy rescued 108 hours after quake</a></li></ul></div></div>';
+	data_p[53] = new Array();
+	data_p[53][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20110809londonriots/index.shtml" target="_blank"><img width="200" height="105" alt="Riots break out in London" src="http://img.news.sina.com/5029/3/2011/0809/U48P5029T3D119F68DT20110809140647.jpg"><span class="ct_txt">Riots break out in London</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0817/389299.html" target="_blank">London police charge 1,000th person in riots probe</a></li><li><a href="http://english.sina.com/world/2011/0815/388798.html" target="_blank">Cameron pledges &#39;all-out war&#39; on street gangs</a></li><li><a href="http://english.sina.com/world/2011/0815/388716.html" target="_blank">Cameron, Miliband row over causes of riots</a></li></ul></div></div>';
+	data_p[54] = new Array();
+	data_p[54][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110725norway/index.shtml" target="_blank"><img width="200" height="105" alt="Massacre in Norway" src="http://img.news.sina.com/5029/3/2011/0725/U47P5029T3D114F68DT20110725165831.jpg"><span class="ct_txt">Massacre in Norway</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0801/384717.html" target="_blank">Insanity ruling not likely in Norway</a></li><li><a href="http://english.sina.com/world/p/2011/0731/384604.html" target="_blank">Finnish people attend anti-violence rally to commemorate victims of Norway attacks</a></li><li><a href="http://english.sina.com/world/2011/0731/384535.html" target="_blank">Norway&#39;s tragedy sounds alarm in Europe</a></li></ul></div></div>';
+	data_p[55] = new Array();
+	data_p[55][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110715murdoch/index.shtml" target="_blank"><img width="200" height="105" alt="News Corp. in hacking scandal" src="http://img.news.sina.com/5029/3/2011/0715/U47P5029T3D102F68DT20110715155432.jpg"><span class="ct_txt">News Corp. in hacking scandal</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0803/385573.html" target="_blank">Phone hacking suspect arrested</a></li><li><a href="http://english.sina.com/world/p/2011/0728/384025.html" target="_blank">James Murdoch confirmed as BSkyB chairman</a></li><li><a href="http://english.sina.com/world/p/2011/0728/384026.html" target="_blank">James Murdoch confirmed as BSkyB chairman(2)</a></li></ul></div></div>';
+	data_p[56] = new Array();
+	data_p[56][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20110707ThaiPM/index.shtml" target="_blank"><img width="200" height="105" alt="Thailand gets first female PM" src="http://img.news.sina.com/5029/3/2011/0707/U112P5029T3D99F68DT20110707133013.jpg"><span class="ct_txt">Thailand gets first female PM</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0808/386659.html" target="_blank">Yingluck receives royal endorsement as Thai PM</a></li><li><a href="http://english.sina.com/world/2011/0721/381955.html" target="_blank">Abhisit, Yingluck ask Red Shirts not to pressure Election Commission</a></li><li><a href="http://english.sina.com/world/2011/0712/380789.html" target="_blank">Thai election board holds back nod for winners</a></li></ul></div></div>';
+	data_p[57] = new Array();
+	data_p[57][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20110531IMFchief/index.shtml" target="_blank"><img width="200" height="105" alt="IMF Chief Election" src="http://img.news.sina.com/5029/3/2011/0531/U112P5029T3D77F68DT20110531135015.jpg"><span class="ct_txt">IMF Chief Election</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2011/0705/380175.html" target="_blank">Lagarde signs up to tougher ethics code</a></li><li><a href="http://english.sina.com/china/p/2011/0629/379438.html" target="_blank">China urges Lagarde to deepen IMF reforms</a></li><li><a href="http://english.sina.com/world/2011/0629/379414.html" target="_blank">First female IMF chief receives praise from former hometown of Chicago </a></li></ul></div></div>';
+	data_p[58] = new Array();
+	data_p[58][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110516IMFsexcharges/index.shtml" target="_blank"><img width="200" height="105" alt="IMF chief faces sex charges" src="http://img.news.sina.com/5029/3/2011/0516/U112P5029T3D72F69DT20110516151453.jpg"><span class="ct_txt">IMF chief faces sex charges</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2011/0918/397806.html" target="_blank">I made a &#39;moral error&#39;, Strauss-Kahn says</a></li><li><a href="http://english.sina.com/world/2011/0719/381639.html" target="_blank">Strauss-Kahn daughter questioned in French probe</a></li><li><a href="http://english.sina.com/world/p/2011/0707/380354.html" target="_blank">Strauss-Kahn case may discourage sex crime victims</a></li></ul></div></div>';
+	data_p[59] = new Array();
+	data_p[59][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110511nuclearcrisis/index.shtml" target="_blank"><img width="200" height="105" alt="Japan battles nuclear crisis" src="http://img.news.sina.com/5029/3/2011/0511/U112P5029T3D70F68DT20110511091855.jpg"><span class="ct_txt">Japan battles nuclear crisis</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2011/0628/379302.html" target="_blank">Radioactive water leaks from Japan&#39;s damaged plant</a></li><li><a href="http://english.sina.com/world/p/2011/0627/379123.html" target="_blank">Japan moves "giant step" toward resolving nuclear crisis</a></li><li><a href="http://english.sina.com/world/2011/0622/378697.html" target="_blank">Japan utility paying $1B to nuclear plant evacuees</a></li></ul></div></div>';
+	data_p[60] = new Array();
+	data_p[60][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/20110503binLadenkilled/index.shtml" target="_blank"><img width="200" height="105" alt="Osama bin Laden killed" src="http://img.news.sina.com/5029/3/2011/0503/U48P5029T3D60F68DT20110503102852.jpg"><span class="ct_txt">Osama bin Laden killed</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0531/375827.html" target="_blank">Pakistani commission to investigate Bin Laden&#39;s operation </a></li><li><a href="http://english.sina.com/world/2011/0523/374494.html" target="_blank">Pakistan suffers from U.S. raid on killing bin Laden</a></li><li><a href="http://english.sina.com/world/2011/0519/374040.html" target="_blank">US, Pakistan try to repair ties after bin Laden</a></li></ul></div></div>';
+	data_p[61] = new Array();
+	data_p[61][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110321libya/index.shtml" target="_blank"><img width="200" height="105" alt="War clouds hover over Libya" src="http://img.news.sina.com/5029/3/2011/0321/U48P5029T3D37F68DT20110321145715.jpg"><span class="ct_txt">War clouds hover over Libya</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2011/1029/409614.html" target="_blank">Libyans celebrate liberation in Tripoli</a></li><li><a href="http://english.sina.com/world/2011/1029/409600.html" target="_blank">ICC warns Libya&#39;s Saif al-Islam against fleeing</a></li><li><a href="http://english.sina.com/world/p/2011/1027/409165.html" target="_blank">NATO to end Libya operations on Oct. 31: Rasmussen</a></li></ul></div></div>';
+	data_p[62] = new Array();
+	data_p[62][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110311japanquake/index.shtml" target="_blank"><img width="200" height="105" alt="Powerful quake rocks Japan" src="http://img.news.sina.com/z/110311japanquake/idx/2011/0311/U48P5029T27D795F336DT20110311162751.jpg"><span class="ct_txt">Powerful quake rocks Japan</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0523/374607.html" target="_blank">6.0-magnitude quake hits sea off east coast of Japan</a></li><li><a href="http://english.sina.com/world/2011/0504/371893.html" target="_blank">Workers enter Japan&#39;s crippled nuke plant </a></li><li><a href="http://english.sina.com/world/2011/0503/371576.html" target="_blank">High level radiation on seabed near Japan&#39;s nuke plant</a></li></ul></div></div>';
+	data_p[63] = new Array();
+	data_p[63][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110222quake/index.shtml" target="_blank"><img width="200" height="105" alt="Earthquake rocks New Zealand" src="http://img.news.sina.com/5029/3/2011/0222/U48P5029T3D26F68DT20110222183327.jpg"><span class="ct_txt">Earthquake rocks New Zealand</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0309/363500.html" target="_blank">Prince William wants to talk with disaster victims in Australia </a></li><li><a href="http://english.sina.com/world/2011/0308/363170.html" target="_blank">Most of New Zealand still open for tourists: TNZ </a></li><li><a href="http://english.sina.com/world/2011/0307/363123.html" target="_blank">PM: Parts of quake-hit NZ city to be abandoned</a></li></ul></div></div>';
+	data_p[64] = new Array();
+	data_p[64][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110126Moscowbombing/index.shtml" target="_blank"><img width="200" height="105" alt="Moscow airport bombing" src="http://img.news.sina.com/z/110126Moscowbombing/idx/2011/0127/U48P5029T27D777F336DT20110127175108.jpg"><span class="ct_txt">Moscow airport bombing</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0215/359947.html" target="_blank">Russian airport bomber a former police officer</a></li><li><a href="http://english.sina.com/world/2011/0209/359068.html" target="_blank">Russia names suspect of Moscow airport blast</a></li><li><a href="http://english.sina.com/world/2011/0208/358929.html" target="_blank">Chechen rebel claims Moscow airport bombing </a></li></ul></div></div>';
+	data_p[65] = new Array();
+	data_p[65][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/110104koreanpenisulatension/index.shtml" target="_blank"><img width="200" height="105" alt="Korean Peninsula Tension" src="http://images2.sina.com/english/z/110104koreanpenisulatension/U164P200T13D767F52DT20110105170750.jpg"><span class="ct_txt">Korean Peninsula Tension</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2011/0128/357921.html" target="_blank">DPRK urges all Koreans to thwart warlike forces&#39; attempts to ignite war</a></li><li><a href="http://english.sina.com/world/2011/0128/357879.html" target="_blank">S. Korea says DPRK statement "unhelpful" for better inter-Korean ties</a></li><li><a href="http://english.sina.com/world/p/2011/0127/357665.html" target="_blank">ROK calls for military talks with DPRK</a></li></ul></div></div>';
+	data_p[66] = new Array();
+	data_p[66][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101124DPRKattack/index.shtml" target="_blank"><img width="200" height="105" alt="DPRK, S Korea trade fire" src="http://images2.sina.com/english/z/101124DPRKattack/U127P200T13D754F52DT20101203004245.jpg"><span class="ct_txt">DPRK, S Korea trade fire</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2010/1213/351811.html" target="_blank">DPRK accuses S Korea of lying in artillery shelling incident</a></li><li><a href="http://english.sina.com/world/2010/1211/351699.html" target="_blank">Seoul to conduct new round of naval drills</a></li><li><a href="http://english.sina.com/world/p/2010/1211/351689.html" target="_blank">DPRK army and people &#39;ready for all-out war&#39;</a></li></ul></div></div>';
+	data_p[67] = new Array();
+	data_p[67][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101123WenvisitRussia/index.shtml" target="_blank"><img width="200" height="105" alt="Premier Wen visits Russia, Tajikistan, attends SCO meet" src="http://images2.sina.com/english/z/101123WenvisitRussia/U101P200T13D753F52DT20101126003354.jpg"><span class="ct_txt">Premier Wen visits Russia, Tajikistan, attends SCO meet</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/china/p/2010/1125/349677.html" target="_blank">Chinese premier holds talks with Tajik counterpart</a></li><li><a href="http://english.sina.com/china/p/2010/1125/349676.html" target="_blank">China, Tajikistan sign joint communique to promote ties, cooperation</a></li><li><a href="http://english.sina.com/china/p/2010/1125/349660.html" target="_blank">Wen&#39;s visits boost trust, co-op, development: Chinese FM</a></li></ul></div></div>';
+	data_p[68] = new Array();
+	data_p[68][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101110G20Summit/index.shtml" target="_blank"><img width="200" height="105" alt="G20 Summit in Seoul" src="http://images2.sina.com/english/z/101110G20Summit/U137P200T13D749F52DT20101112004002.jpg"><span class="ct_txt">G20 Summit in Seoul</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/video/2010/1114/348076.html" target="_blank">The embarrassing incident between Obama and the Chinese reporter</a></li><li><a href="http://english.sina.com/world/2010/1114/347986.html" target="_blank">APEC broadens horizons</a></li><li><a href="http://english.sina.com/china/p/2010/1114/347969.html" target="_blank">President Hu advocates unity, development at G20, APEC meetings</a></li></ul></div></div>';
+	data_p[69] = new Array();
+	data_p[69][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101108cameronchina/index.shtml" target="_blank"><img width="200" height="105" alt="British PM David Cameron visits China" src="http://images2.sina.com/english/z/101108cameronchina/U127P200T13D747F52DT20101110214142.jpg"><span class="ct_txt">British PM David Cameron visits China</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/china/2010/1110/347528.html" target="_blank">Cameron sees China&#39;s rise as an opportunity</a></li><li><a href="http://english.sina.com/china/2010/1110/347507.html" target="_blank">China, U.K. pledge pragmatic economic cooperation</a></li><li><a href="http://english.sina.com/china/p/2010/1110/347490.html" target="_blank">British prime minister calls for "stronger relationship" with China</a></li></ul></div></div>';
+	data_p[70] = new Array();
+	data_p[70][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101102russiajapan/index.shtml" target="_blank"><img width="200" height="105" alt="Kuril islands dispute between Russian and Japan" src="http://images2.sina.com/english/z/101102russiajapan/U127P200T13D745F52DT20101102201434.jpg"><span class="ct_txt">Kuril islands dispute between Russian and Japan</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2010/1130/350193.html" target="_blank">Japanese FM to head for Hokkaido to view disputed isles</a></li><li><a href="http://english.sina.com/world/2010/1116/348369.html" target="_blank">Kremlin scraps plan to return islands to Japan: report</a></li><li><a href="http://english.sina.com/world/p/2010/1103/346545.html" target="_blank">Japanese ambassador briefs senior officials on Medvedev&#39;s visit to disputed island</a></li></ul></div></div>';
+	data_p[71] = new Array();
+	data_p[71][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/usmidterms/index.shtml" target="_blank"><img width="200" height="105" alt="US midterm election 2010" src="http://images2.sina.com/english/z/usmidterms/U164P200T13D743F52DT20101103190453.jpg"><span class="ct_txt">US midterm election 2010</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/2010/1107/346911.html" target="_blank">New political landscape jeopardizes U.S. climate bill</a></li><li><a href="http://english.sina.com/world/2010/1103/346541.html" target="_blank">A chastened Obama faces the world</a></li><li><a href="http://english.sina.com/world/p/2010/1103/346534.html" target="_blank">New reality: Obama, GOP talk compromise, conflict</a></li></ul></div></div>';
+	data_p[72] = new Array();
+	data_p[72][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101027indonesiatsunami/index.shtml" target="_blank"><img width="200" height="105" alt="Indonesia hit by deadly tsunami" src="http://images2.sina.com/english/z/101027indonesiatsunami/U164P200T13D741F52DT20101028071652.jpg"><span class="ct_txt">Indonesia hit by deadly tsunami</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/world/p/2010/1104/346680.html" target="_blank">Death toll from Indonesian volcano climbs to 56</a></li><li><a href="http://english.sina.com/world/p/2010/1103/346540.html" target="_blank">Huge volcanic blast spurs more Indonesians to flee</a></li><li><a href="http://english.sina.com/world/p/2010/1102/346251.html" target="_blank">Indonesian volcano forces flight cancellations</a></li></ul></div></div>';
+	data_p[73] = new Array();
+	data_p[73][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101025cholera/index.shtml" target="_blank"><img width="200" height="105" alt="Cholera outbreak in Haiti, Nigeria" src="http://images2.sina.com/english/z/101025cholera/U135P200T13D739F52DT20101025002012.jpg"><span class="ct_txt">Cholera outbreak in Haiti, Nigeria</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/life/p/2010/1203/350755.html" target="_blank">Cholera rages in rural Haiti, overwhelming clinics</a></li><li><a href="http://english.sina.com/life/2010/1111/347730.html" target="_blank">Haiti&#39;s cholera death toll rises to 724</a></li><li><a href="http://english.sina.com/life/p/2010/1103/346512.html" target="_blank">Haiti&#39;s cholera death toll reaches 442</a></li></ul></div></div>';
+	data_p[74] = new Array();
+	data_p[74][0] = '<div class="blk_01"><div class="b_left"><div class="ct_p_05 clearfix"><div class="ct_box"><a href="http://english.sina.com/z/101013chilemine/index.shtml" target="_blank"><img width="200" height="105" alt="Chile mine rescue" src="http://images2.sina.com/english/z/101013chilemine/U127P200T13D732F52DT20101015011709.jpg"><span class="ct_txt">Chile mine rescue</span></a></div></div></div><div class="b_right"><ul class="list_01"><li><a href="http://english.sina.com/video/2010/1015/343657.html" target="_blank">More Chile miners to leave hospital</a></li><li><a href="http://english.sina.com/world/p/2010/1014/343639.html" target="_blank">Chile to punish those responsible for mine accident</a></li><li><a href="http://english.sina.com//world/p/2010/1014//2010/1015/343624.html" target="_blank">First three miners leave Chile hospital for home</a></li></ul></div></div>';
+dt_i=75
+
+var page_count=dt_i/count;
+if(dt_i%count !=0)
+{
+page_count=parseInt(page_count)+1;
+}
+</script>
+<script language=javascript>
+
+function loadpage(i)
+{
+m=(i-1)*count;
+n=i*count;
+if(n>(dt_i+1))
+{
+n=dt_i+1;
+}
+echo(m,n);
+page(i);
+
+return true;
+}
+
+function echo(i,j)
+{
+var outstr='';
+if(j>(dt_i-1))
+j=dt_i;
+if(i<0||i>(dt_i-1))
+i=0;
+for(m=i;m<j;m++)
+{
+outstr+=data_p[m][0];	
+}
+
+document.getElementById("show_data").innerHTML=outstr;
+}
+
+function page(i)
+{
+var outstr='';
+if(i<=1)
+outstr+=' <span class="btn_off">&lt;&lt;Previous</span>';
+else
+outstr+=' <a href="#top" title="Previous" onclick="return loadpage('+(i-1)+');">&lt;&lt;Previous</a>';
+
+start_=i-2;
+end_=i+3;
+if(start_<1)
+{
+start_=1;
+end_=6;
+}
+if(end_>page_count)
+{
+end_=page_count+1;
+start_=end_-5
+}
+for(m=start_;m<end_;m++)
+{
+if(m>0)
+{
+if(m==i)
+	outstr+='<b><span class="pagebox_cur_page">'+m+'</span></b>';
+else
+	outstr+='<a href="#top" onclick="return loadpage('+m+');" title="">'+m+'</a>';
+}
+}
+
+
+if((i*count)>=(dt_i-1))
+outstr+='<span class="btn_off">Next&gt;&gt;</span>';
+else
+outstr+='<a class="btn_on" href="#top" onclick="return loadpage('+(i+1)+');" title="next">Next&gt;&gt;</a>';
+
+document.getElementById("show_page").innerHTML=outstr;
+//document.getElementById("ast_page1").innerHTML=outstr;
+}
+
+</script>	 
+
+<script>
+loadpage(1);
+</script> 
+
+</body>
+</html>

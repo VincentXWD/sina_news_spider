@@ -1,0 +1,27 @@
+http://english.sina.com/specialcoverage/china.html
+http://english.sina.com/specialcoverage/world.html
+http://english.sina.com/specialcoverage/ent.html
+http://english.sina.com/specialcoverage/sports.html
+http://english.sina.com/specialcoverage/biz-tech.html
+http://english.sina.com/specialcoverage/culture.html
+
+
+python(划掉)还是golang？
+
+js在客户端跑，那么就：
+	跳转js直接爆10000，搞到所有的生成代码: loadpage(10000);
+
+Subject URL Reg:
+	http://[^\s]+/z/[^\s]+.shtml
+Subject Name Reg:
+	<title>.+</title>
+
+新闻正则：
+	http://english.sina.com/[^\s]+/[\w]*/*[\d]*/[\d]*/[\d]*.html
+
+新闻正文：
+	用goquery
+
+
+每篇文档的发布时间，标题，和正文内容清晰
+
