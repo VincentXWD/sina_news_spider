@@ -44,7 +44,6 @@ func GetSubjectName(rawHtml string) string {
 
 //TODO: 获取新闻的url，直接保存到对应专题的path
 func GetNewsUrls(Url string, specialCoverage string, savePath string) {
-	var DEBUG_ALL string = ""
 	rawHtml := GetHtml(Url)
 	subjectName := GetSubjectName(rawHtml)
 	if subjectName == "" {
@@ -60,20 +59,14 @@ func GetNewsUrls(Url string, specialCoverage string, savePath string) {
 
 	for _, href := range ret {
 		log.Println("NEW:",href)
-		if KIRAI_DEBUG == 1 {
-			DEBUG_ALL += href
-			DEBUG_ALL += "\n"
-		}
 		new := GetNews(href, subjectName, specialCoverage)
-		if new.Subject == SIGNAL {
+		if new.Prefix == SIGNAL {
 			continue
 		}
 		news[news_it] = new
 		news_it++
 	}
-	if KIRAI_DEBUG == 1 {
-		SaveFile(savePath, "urls", DEBUG_ALL)
-	}
+
 	log.Println("Special Coverage : ", specialCoverage)
 	log.Println("Total : ", len(ret))
 	log.Println("Saving news. Path : ", savePath)
@@ -91,10 +84,10 @@ func SaveNews(new New, savePath string) {
 	SaveFile(savePath+"/", fileName, buf)
 }
 
-// TODO: query获取新闻时间、标题、内容
-func GetNews(Url string, Subject string, specialCoverage string) New {
-	doc, err := goquery.NewDocument(Url)
+//页面样式1
+func getNewsProcess1(Url string, Subject string, specialCoverage string) New {
 	var new = New{"","","","","",""}
+	doc, err := goquery.NewDocument(Url)
 	if err != nil {
 		log.Errorln(err.Error())
 		return New{SIGNAL,"","","","",""}
@@ -112,11 +105,49 @@ func GetNews(Url string, Subject string, specialCoverage string) New {
 		content := contentSelection.Get(s_it)
 		new.Content += goquery.NewDocumentFromNode(content).Find("p").Text()
 	}
-	contentSelection = doc.Find("#Esinawrap .Main #Article .b_cont")
+	if new.Prefix != "" && new.Subject != "" && new.Content != "" && new.Time != "" {
+		return new
+	}
+	return New{SIGNAL,"","","","",""}
+}
+
+//页面样式2
+func getNewsProcess2(Url string, Subject string, specialCoverage string) New {
+	var new = New{"","","","","",""}
+	doc, err := goquery.NewDocument(Url)
+	if err != nil {
+		log.Errorln(err.Error())
+		return New{SIGNAL,"","","","",""}
+	}
+	new.NewId = GetNewId(Url)
+	if new.NewId == "" {
+		return New{SIGNAL,"","","","",""}
+	}
+	new.Prefix = specialCoverage
+	new.Subject = Subject
+	new.Title = doc.Find(".wrap .part_01 .p_left #Article #artibodyTitle h1").First().Text()
+	new.Time = doc.Find(".wrap .part_01 .p_left #Article #artibodyTitle span").First().Text()
+	contentSelection := doc.Find(".wrap .part_01 .p_left #Article #artibody")
 	for s_it := 0; s_it < contentSelection.Size(); s_it++ {
 		content := contentSelection.Get(s_it)
 		new.Content += goquery.NewDocumentFromNode(content).Find("p").Text()
 	}
+	if new.Prefix != "" && new.Subject != "" && new.Content != "" && new.Time != "" {
+		return new
+	}
+	return New{SIGNAL,"","","","",""}
+}
 
-	return new
+// TODO: query获取新闻时间、标题、内容
+func GetNews(Url string, Subject string, specialCoverage string) New {
+	var new = New{"","","","","",""}
+	new = getNewsProcess1(Url, Subject, specialCoverage)
+	if new.Prefix != SIGNAL {
+		return new
+	}
+	new = getNewsProcess2(Url, Subject, specialCoverage)
+	if new.Prefix != SIGNAL {
+		return new
+	}
+	return New{SIGNAL,"","","","",""}
 }

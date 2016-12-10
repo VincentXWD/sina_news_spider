@@ -43,7 +43,7 @@ func main() {
 	log.Infoln("Start.")
 	Init()
 	urls := GetSubjectUrl()
-	for i := 0; i < 1; i++ {
+	for i := 0; i < len(urls); i++ {
 		for j := 0; j < len(urls[i]); j++ {
 			GetNewsUrls(urls[i][j], specialCoverage[i], "./result/")
 		}
