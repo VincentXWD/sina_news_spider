@@ -60,6 +60,9 @@ func GewNews(urls []string, subjectName string, specialCoverage string) ([]New, 
 //保存新闻，同时保存对应目录
 func SaveNews(news []New, news_it int, savePath string, specialCoverage string) {
 	CreateDir(CATALOG_PATH+specialCoverage+"/")
+	if PathExists(CATALOG_PATH+specialCoverage+"/"+"path.snp") == false {
+		SaveFile(CATALOG_PATH+specialCoverage+"/", "path.snp", "")
+	}
 	var ctlg string = ""
 	for n_it := 0; n_it < news_it; n_it++ {
 		CreateDir(savePath+news[n_it].Prefix+"/"+news[n_it].Subject+"/")
@@ -67,7 +70,7 @@ func SaveNews(news []New, news_it int, savePath string, specialCoverage string) 
 		ctlg += savePath+news[n_it].Prefix+"/"+news[n_it].Subject+"/"+news[n_it].NewId + ".sns"
 		ctlg += "\n"
 	}
-	SaveFile(CATALOG_PATH+specialCoverage+"/", "path.snp", ctlg)
+	AppendFile(CATALOG_PATH+specialCoverage+"/", "path.snp", ctlg)
 }
 //获取新闻的url，直接保存到对应专题的path
 func GetNewsUrls(Url string, specialCoverage string, savePath string) {

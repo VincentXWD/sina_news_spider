@@ -30,6 +30,37 @@ func CreateDir(PathName string) error {
 	return nil
 }
 
+func AppendFile(SavePath string, FileName string, buf string) {
+	out, err := os.OpenFile(SavePath+FileName, os.O_WRONLY, 0644)
+	defer out.Close()
+	if err != nil {
+		log.Errorln(err.Error())
+		return
+	}
+	offset, err := out.Seek(0, os.SEEK_END)
+	if err != nil {
+		log.Errorln(err.Error())
+		return
+	}
+	_, err = out.WriteAt([]byte(buf), offset)
+	if err != nil {
+		log.Errorln(err.Error())
+		return
+	}
+	log.Warnln("Save file finished. Locate in ", SavePath + FileName)
+}
+
+func PathExists(path string) bool {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true
+	}
+	if os.IsNotExist(err) {
+		return false
+	}
+	return false
+}
+
 func SaveFile(SavePath string, FileName string, buf string) {
 	out, err := os.Create(SavePath + FileName)
 	defer out.Close()
