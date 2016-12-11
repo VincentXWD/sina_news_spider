@@ -42,7 +42,34 @@ func GetSubjectName(rawHtml string) string {
 	return tmp[0][:it]
 }
 
-//TODO: 获取新闻的url，直接保存到对应专题的path
+//按照对应template爬取新闻
+func GewNews(urls []string, subjectName string, specialCoverage string) ([]New, int){
+	news := make([]New, MAX_NEWS_SIZE)
+	var news_it int = 0
+	for _, href := range urls {
+		log.Infoln("NEW:",href)
+		new := getNews(href, subjectName, specialCoverage)
+		if new.Prefix == SIGNAL {
+			continue
+		}
+		news[news_it] = new
+		news_it++
+	}
+	return news, news_it
+}
+//保存新闻，同时保存对应目录
+func SaveNews(news []New, news_it int, savePath string, specialCoverage string) {
+	CreateDir(CATALOG_PATH+specialCoverage+"/")
+	var ctlg string = ""
+	for n_it := 0; n_it < news_it; n_it++ {
+		CreateDir(savePath+news[n_it].Prefix+"/"+news[n_it].Subject+"/")
+		saveNews(news[n_it], savePath+news[n_it].Prefix+"/"+news[n_it].Subject)
+		ctlg += savePath+news[n_it].Prefix+"/"+news[n_it].Subject+"/"+news[n_it].NewId + ".sns"
+		ctlg += "\n"
+	}
+	SaveFile(CATALOG_PATH+specialCoverage+"/", "path.snp", ctlg)
+}
+//获取新闻的url，直接保存到对应专题的path
 func GetNewsUrls(Url string, specialCoverage string, savePath string) {
 	rawHtml := GetHtml(Url)
 	subjectName := GetSubjectName(rawHtml)
@@ -53,32 +80,18 @@ func GetNewsUrls(Url string, specialCoverage string, savePath string) {
 	log.Infoln(subjectName)
 
 	ret := newsRegExp.FindAllString(rawHtml, -1)
-	news := make([]New, MAX_NEWS_SIZE)
-	var news_it int = 0
 	subjectName = strings.Replace(subjectName, " ", "_", -1)
+	news, news_it := GewNews(ret, subjectName, specialCoverage)
 
-	for _, href := range ret {
-		log.Println("NEW:",href)
-		new := GetNews(href, subjectName, specialCoverage)
-		if new.Prefix == SIGNAL {
-			continue
-		}
-		news[news_it] = new
-		news_it++
-	}
+	log.Infoln("Special Coverage : ", specialCoverage)
+	log.Infoln("Total : ", len(ret))
+	log.Infoln("Saving news. Path : ", savePath)
 
-	log.Println("Special Coverage : ", specialCoverage)
-	log.Println("Total : ", len(ret))
-	log.Println("Saving news. Path : ", savePath)
-
-	for n_it := 0; n_it < news_it; n_it++ {
-		CreateDir(savePath+news[n_it].Prefix+"/"+news[n_it].Subject+"/")
-		SaveNews(news[n_it], savePath+news[n_it].Prefix+"/"+news[n_it].Subject)
-	}
+	SaveNews(news, news_it, savePath, specialCoverage)
 }
 
 // 保存新闻，目录为对应专题，保存newid.sns
-func SaveNews(new New, savePath string) {
+func saveNews(new New, savePath string) {
 	var fileName string = new.NewId + ".sns"
 	var buf string = new.Subject + "\n" + new.Title + "\n" + new.Time + "\n" + new.Content + "\n"
 	SaveFile(savePath+"/", fileName, buf)
@@ -139,7 +152,7 @@ func getNewsProcess2(Url string, Subject string, specialCoverage string) New {
 }
 
 // TODO: query获取新闻时间、标题、内容
-func GetNews(Url string, Subject string, specialCoverage string) New {
+func getNews(Url string, Subject string, specialCoverage string) New {
 	var new = New{"","","","","",""}
 	new = getNewsProcess1(Url, Subject, specialCoverage)
 	if new.Prefix != SIGNAL {

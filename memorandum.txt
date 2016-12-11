@@ -6,8 +6,6 @@ http://english.sina.com/specialcoverage/biz-tech.html
 http://english.sina.com/specialcoverage/culture.html
 
 
-python(划掉)还是golang？
-
 js在客户端跑，那么就：
 	跳转js直接爆10000，搞到所有的生成代码: loadpage(10000);
 

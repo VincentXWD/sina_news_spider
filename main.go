@@ -11,7 +11,7 @@ const (
 	SIGNAL = "_KIRAI_YOUSHOULDEXIT_KIRAI_"
 	KIRAI_DEBUG = 2
 	RESULT_PATH = "./result/"
-	CATALOG_PATH = "./catalog/"
+		CATALOG_PATH = "./catalog/"
 	SUBJECT_PATH_CAT_FILENAME = "subject.usns"
 )
 
