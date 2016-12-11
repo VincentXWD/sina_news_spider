@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6f1c03f-9163-47e7-8886-ca21b21acb38" name="Default" comment="" />
+    <list default="true" id="f6f1c03f-9163-47e7-8886-ca21b21acb38" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sn_spider" afterPath="" />
+    </list>
     <ignored path="sina_news_spider.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
